@@ -1,0 +1,52 @@
+// Selectbox Css
+body {
+    .k_select {
+        @include defaultFontStyle(400, 14, 18, $k_title);
+        color: $k_title;
+        max-width: 120px;
+
+        &__control {
+            min-width: 120px;
+            box-shadow: none;
+            border: 1px solid $k_lightborder;
+            &--is-focused {
+                border-color: $k_primary;
+            }
+            &:hover {
+                border-color: $k_primary;
+            }
+        }
+
+        &__menu {
+            z-index: 2;
+        }
+
+        &__option {
+            @include defaultFontStyle(400, 14, 18, $k_title);
+            &:hover {
+                @include backgroundOpacity($k_primary, $opacity: 0.2);
+            }
+            &--is-focused {
+                @include backgroundOpacity($k_primary, $opacity: 0.2);
+            }
+            &--is-selected {
+                color: $k_white;
+                background-color: $k_primary !important;
+            }
+        }
+
+        &__dropdown-indicator {
+            cursor: pointer;
+            background-color: $k_lightercolor;
+            border-radius: 0 5px 5px 0;
+        }
+
+        &__clear-indicator {
+            cursor: pointer;
+        }
+
+        &__indicator-separator {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+/* display property */
+.k_block	{display: block;}
+.k_ib {display: inline-block;}
+
+/* flex box */
+.k_flex { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; }
+.k_inline-flex { display: inline-flex !important; }
+.k_flex-wrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.k_direction-column {flex-direction: column;}
+.k_align-start { -webkit-box-align: start; -ms-flex-align: start; align-items: start; }
+.k_align-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.k_align-end { -webkit-box-align: flex-end; -ms-flex-align: flex-end; align-items: flex-end; }
+.k_align-baseline { -webkit-box-align: baseline;-ms-flex-align: baseline;align-items: baseline; }
+.k_content-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.k_content-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.k_content-around { -webkit-box-pack: around; -ms-flex-pack: around; justify-content: space-around; }
+.k_content-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+.k_flex-row {-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row;}
+.k_flex-row-reverse {-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
+.k_flex-col { -webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column; }
+.k_flex-1{flex: 1 1 auto;}
+.k_flex-1-0{flex: 1 1 0;}
+.k_flex-2{flex: 2 2 auto;}
+.k_flex-3{flex: 3 3 auto;}
+.k_flex-4{flex: 4 4 auto;}
+.k_flex-5{flex: 5 5 auto;}
+.k_flex-6{flex: 6 6 auto;}
+.k_flex-shrink { -ms-flex-negative: 0;flex-shrink: 0; }
+
+/* display table */
+.k_table {display: table;}
+.k_table-cell {display: table-cell;}
+
+/* display grid */
+.k_grid {display: grid;}
+/* */
+.k_down-arrow {transform: rotate(180deg);}
+
+// Row
+.k_row{ display: flex; flex-wrap: wrap; margin-right: -10px; margin-left: -10px; }
+
+/* align */
+.k_align-top {vertical-align: top;}
+.k_align-middle {vertical-align: middle;}
+.k_align-bottom {vertical-align: bottom;}
+
+/* texts */
+.k_text-center { text-align: center; }
+.k_text-left { text-align: left; }
+.k_text-right { text-align: right; }
+.k_text-u { text-transform: uppercase;}
+.k_text-l { text-transform: lowercase;}
+.k_text-c { text-transform: capitalize;}
+.k_text-bold { font-weight: 700 !important; }
+.k_ellipse { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* object fit */
+.k_object-contain {-o-object-fit: contain;object-fit: contain;}
+.k_object-cover {-o-object-fit: cover;object-fit: cover;}
+
+/* overflow */
+.k_overflow-auto { overflow: auto; }
+.k_overflow-unset { overflow: unset; }
+.k_overflow-hidden { overflow: hidden; }
+.k_overflow-x-hidden { overflow-x: hidden; }
+.k_overflow-y-hidden { overflow-y: hidden; }
+.k_overflow-x-auto { overflow-x: auto; }
+.k_overflow-y-auto { overflow-y: auto; }
+
+/* word break */
+.k_break-all {word-break: break-all}
+.k_word-break { word-break: break-word; }
+
+/* white-space */
+.k_ws-initial { white-space: initial; }
+.k_ws-nowrap { white-space: nowrap; }
+
+/* position */
+.k_relative {position: relative;}
+.k_fixed {position: fixed;}
+.k_absolute {position: absolute;}
+.k_pos-0 {top: 0; right: 0; bottom: 0; left: 0;}
+.k_top-0 {top: 0;}
+.k_right-0 {right: 0;}
+.k_bottom-0 {bottom: 0;}
+.k_z-1{z-index: 1}
+
+/* width */
+.k_w-25 {width: 25%;}
+.k_w-33 {width: 33.33%;}
+.k_w-50 {width: 50%;}
+.k_w-66 {width: 66.66%;}
+.k_w-75 {width: 75%;}
+.k_w-full {width: 100%;}
+.k_h-full {height: 100%;}
+.k_w-200 { width: 200px;}
+
+/* border */
+.k_bt-light {border-top: 1px solid $k_lightborder;}
+.k_bb-light {border-bottom: 1px solid $k_lightborder;}
+.k_br-light {border-right: 1px solid $k_lightborder;}
+.k_bl-light {border-bottom: 1px solid $k_lightborder;}
+
+/* cursor */
+.k_cp {cursor: pointer;}
+.k_cd {cursor: default;}
+
+/* margin */
+.k_m-auto{margin: auto;}
+.k_ml-auto{ margin-left: auto;}
+.k_mr-auto{ margin-right: auto;}
+.k_mx-auto{ margin-left: auto; margin-right: auto; }
+
+/* user select */
+.k_sn{ -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+
+/* pointer-events */
+.k_event-none {pointer-events: none;}
+.k_event-unset {pointer-events: unset;}
+
+/* font style */
+.k_fs-normal {font-style: normal;}
+.k_fs-italic {font-style: italic;}
+
+/* resize */
+.k_resize-none{ resize: none !important;}

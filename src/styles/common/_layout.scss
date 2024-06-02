@@ -1,0 +1,39 @@
+// Layout CSS
+.k_layout {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+
+    &-list {
+        background-color: $k_white;
+        margin: 10px;
+        @include box-shadow;
+
+
+        &-header {
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            height: 60px;
+            border-bottom: 1px solid $k_lightborder;
+            padding: 10px;
+        }
+
+        &-inner {
+            height: calc(100vh - 200px);
+            overflow-y: auto;
+            padding: 10px;
+        }
+    }
+
+    footer {
+        height: 50px;
+        background-color: $k_white;
+        @include defaultFontStyle(400, 14, 16, $k_icon);
+
+        a {
+            color: $k_primary;
+        }
+    }
+}

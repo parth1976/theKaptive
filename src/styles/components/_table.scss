@@ -1,0 +1,114 @@
+// Tables
+.k_table {
+    width: 100%;
+
+    // Tables Css
+    .ant-table {
+        -thead {
+            > tr {
+                > th {
+                    color: $k_title;
+                    background-color: $k_white;
+                }
+            }
+        }
+        &-tbody {
+            > tr.ant-table-row-selected {
+                > td {
+                    @include backgroundOpacity($k_primary, $opacity: 0.1);
+                }
+            }
+            tr {
+                &:nth-child(odd) {
+                    background: $k_white;
+                }
+                &:nth-child(even) {
+                    background: $k_tbgcolor;
+                }
+                td {
+                    color: $k_font;
+
+                    &.k_date {
+                        color: $k_gray;
+                    }
+                }
+            }
+        }
+    }
+
+    // Tables Pagination
+    .ant-pagination {
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                a {
+                    color: $k_primary;
+                }
+                border-color: $k_primary;
+            }
+
+            &-active {
+                border-color: $k_primary;
+                a {
+                    color: $k_primary;
+                }
+            }
+        }
+        &-prev,
+        &-next {
+            &:hover {
+                .ant-pagination-item-link {
+                    color: $k_primary;
+                    border-color: $k_primary;
+                }
+            }
+        }
+    }
+
+    .ant-table-pagination {
+        .ant-pagination {
+            margin: 15px 0 0;
+        }
+    }
+
+    // Tables Checkbox
+    .ant-checkbox {
+        &-checked {
+            .ant-checkbox-inner {
+                background-color: $k_primary;
+                border-color: $k_primary;
+            }
+            &:after {
+                border-color: $k_primary;
+            }
+        }
+        &:hover {
+            .ant-checkbox-inner {
+                border-color: $k_primary;
+            }
+        }
+
+        &-input {
+            &:focus {
+                + .ant-checkbox-inner {
+                    border-color: $k_primary;
+                }
+            }
+        }
+
+        &-indeterminate {
+            .ant-checkbox-inner {
+                &::after {
+                    background-color: $k_primary;
+                }
+            }
+            &:hover {
+                .ant-checkbox-inner {
+                    border-color: $k_primary;
+                }
+            }
+        }
+    }
+}

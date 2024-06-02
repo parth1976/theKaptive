@@ -1,0 +1,111 @@
+// Content CSS
+.k_content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 320px);
+    &-header {
+        background-color: $k_white;
+        height: 100px;
+
+        &-left {
+            .k_input-common {
+                min-width: 354px;
+            }
+        }
+
+        &-right {
+            .k_user-box {
+                margin-left: 20px;
+                &-img {
+                    @include square(50px);
+                    border: 3px solid $k_grayborder;
+                    border-radius: 100%;
+                }
+                &-info {
+                    @include defaultFontStyle(400, 16, 20, $k_font);
+                    margin-left: 10px;
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .k_toolbar-header {
+        @include backgroundOpacity($k_primary, $opacity: 0.1);
+        height: 50px;
+
+        h1 {
+            @include defaultFontStyle(400, 18, 20, $k_primary);
+        }
+
+        ul {
+            li {
+                position: relative;
+                margin-left: 20px;
+                @include defaultFontStyle(400, 14, 18, $k_gray);
+                &::after {
+                    right: 0;
+                    @include content;
+                    content: "-";
+                    right: -15px;
+                    top: 0;
+                    cursor: initial;
+                    @include defaultFontStyle(600, 16, 18, $k_primary);
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+                &.active {
+                    color: $k_primary;
+                }
+            }
+        }
+    }
+}
+
+//common icon
+.k_common-icon {
+    position: relative;
+    @include defaultFontStyle(400, 28, 26, $k_icon);
+    margin-left: 20px;
+
+    .k_dot {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        border-radius: 100%;
+        border: 2px solid $k_lightercolor;
+        background-color: $k_primary;
+        @include square(14px);
+    }
+    &-menu {
+        color: $k_grayblack;
+    }
+}
+
+// Common title
+.k_common-title {
+    h2 {
+        @include defaultFontStyle(400, 22, 24, $k_title);
+    }
+}
+
+// Common G Icon
+.k_icon {
+    border-radius: 5px;
+    @include square(38px);
+    background-color: $k_gray;
+    @include defaultFontStyle(400, 18, 20, $k_white);
+    @include transition(all 0.5s);
+    border: none;
+
+    &:hover {
+        @include transition(all 0.5s);
+        background-color: $k_pastelred;
+        border: none;
+    }
+}

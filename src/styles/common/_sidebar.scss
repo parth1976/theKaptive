@@ -1,0 +1,58 @@
+// Sidebar CSS
+.k_left-sidebar {
+    background: $k_white;
+    width: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+        background-color: $k_primary;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+
+        i {
+            @include defaultFontStyle(500, 28, 32, $k_white);
+        }
+    }
+
+    &-menubar {
+        overflow-y: auto;
+
+        &.k_left-sidebar-menubar-height {
+            border-bottom: 1px solid $k_gray;
+            height: calc(100vh - 200px);
+        }
+    }
+
+    .k_menu {
+        a {
+            padding: 15px 20px 15px 40px;
+            @include defaultFontStyle(400, 16, 20, $k_font);
+            text-transform: capitalize;
+            @include transition(all 0.5s);
+
+            i {
+                margin-right: 10px;
+                font-size: 20px;
+                color: $k_icon;
+                @include transition(all 0.5s);
+            }
+
+            &:hover,
+            &.active {
+                @include transition(all 0.5s);
+                color: $k_primary;
+                @include backgroundOpacity($k_primary, $opacity: 0.1);
+
+                i {
+                    @include transition(all 0.5s);
+                    color: $k_primary;
+                }
+            }
+        }
+    }
+}

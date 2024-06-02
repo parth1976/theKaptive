@@ -1,0 +1,63 @@
+
+// Grid box
+@for $i from 1 through 12 {
+	.k_col-#{$i} {
+		flex: 0 0 ($i/12) * 100%;
+		max-width: ($i/12) * 100%;
+		padding: 0 10px;
+	}
+}
+
+// Margin and Padding
+@for $i from 0 through 30 {
+	.k_m-#{$i} {
+		$margin: $i * 1px;
+		margin: $margin;
+	}
+	.k_mt-#{$i} {
+		$margin: $i * 1px;
+		margin-top: $margin;
+	}
+	.k_mr-#{$i} {
+		$margin: $i * 1px;
+		margin-right: $margin;
+	}
+	.k_mb-#{$i} {
+		$margin: $i * 1px;
+		margin-bottom: $margin;
+	}
+	.k_ml-#{$i} {
+		$margin: $i * 1px;
+		margin-left: $margin;
+	}
+	.k_p-#{$i} {
+		$padding: $i * 1px;
+		padding: $padding;
+	}
+	.k_pt-#{$i} {
+		$padding: $i * 1px;
+		padding-top: $padding;
+	}
+	.k_pr-#{$i} {
+		$padding: $i * 1px;
+		padding-right: $padding;
+	}
+	.k_pb-#{$i} {
+		$padding: $i * 1px;
+		padding-bottom: $padding;
+	}
+	.k_pl-#{$i} {
+		$padding: $i * 1px;
+		padding-left: $padding;
+	}
+	.k_py-#{$i} {
+		$padding: $i * 1px;
+		padding-top: $padding;
+		padding-bottom: $padding;
+	}
+	.k_px-#{$i} {
+		$padding: $i * 1px;
+		padding-left: $padding;
+		padding-right: $padding;
+	}
+}
